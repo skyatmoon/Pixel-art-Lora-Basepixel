@@ -8,6 +8,7 @@ Here are some sample output images:
     <img src="sample/00027-4175616060.png" style="width:33%; height:auto;">
     <img src="sample/00198-1701572373.png" style="width:33%; height:auto;">
     <img src="sample/00219-3490095212.png" style="width:33%; height:auto;">
+    <img src="sample/00015-209914102.png" style="width:33%; height:auto;">
 </div>
 
 
