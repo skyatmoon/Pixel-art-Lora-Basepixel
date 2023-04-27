@@ -3,4 +3,12 @@ A lora for AI drawing, can let model drawing Pixel art style character and scene
 
 ## Sample Outputs
 Here are some sample output images:
-![moon](sample/00027-4175616060.png)
+
+<div style="display:flex;">
+    <img src="sample/00027-4175616060.png" style="width:33%; height:auto;">
+    <img src="sample/00198-1701572373.png" style="width:33%; height:auto;">
+    <img src="sample/00219-3490095212.png" style="width:33%; height:auto;">
+</div>
+
+
+
