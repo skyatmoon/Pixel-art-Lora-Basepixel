@@ -1,0 +1,65 @@
+[model_arguments]
+v2 = false
+v_parameterization = false
+pretrained_model_name_or_path = "/content/sd-models/Stable-Diffusion-v1-5.safetensors"
+vae = "/content/vae/vae.pt"
+
+[additional_network_arguments]
+unet_lr = 0.0001
+text_encoder_lr = 1e-5
+network_dim = 128
+network_alpha = 64.0
+network_train_unet_only = false
+network_train_text_encoder_only = false
+network_module = "networks.lora"
+network_args = []
+
+[optimizer_arguments]
+optimizer_type = "AdamW8bit"
+lr_scheduler = "cosine_with_restarts"
+lr_warmup_steps = 200
+lr_restart_cycles = 1
+learning_rate = 0.0001
+
+[dataset_arguments]
+cache_latents = true
+shuffle_caption = true
+enable_bucket = true
+
+[training_arguments]
+batch_size = 20
+noise_offset = 0.05
+keep_tokens = 0
+min_bucket_reso = 256
+max_bucket_reso = 1024
+caption_extension = ".txt"
+max_token_length = 225
+seed = 1337
+xformers = true
+lowram = false
+min_snr_gamma = 5
+max_train_epochs = 20
+resolution = "512,512"
+clip_skip = 2
+mixed_precision = "fp16"
+save_precision = "fp16"
+
+[sample_prompt_arguments]
+sample_sampler = "euler_a"
+sample_every_n_epochs = 5
+
+[dreambooth_arguments]
+train_data_dir = "/content/train/data"
+reg_data_dir = ""
+prior_loss_weight = 0.3
+
+[saving_arguments]
+output_dir = "/content/drive/MyDrive/Lora"
+output_name = "basepixel"
+save_every_n_epochs = 2
+save_n_epoch_ratio = 0
+save_last_n_epochs = 499
+save_state = false
+save_model_as = "safetensors"
+logging_dir = "/content/drive/MyDrive/Lora/logs"
+log_prefix = "basepixel"
