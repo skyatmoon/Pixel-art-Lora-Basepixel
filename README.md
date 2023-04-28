@@ -1,6 +1,6 @@
 # Pixel-art-Lora-Basepixel
 A lora for AI drawing, can let model drawing Pixel art style character and scenes
-
+Welcome to CIVITAI to see more and downloade for a try: https://civitai.com/models/52304/pixel-art-style-lora
 ## Sample Outputs
 Here are some sample output images:
 
